@@ -6,10 +6,33 @@
     <title>To-Do App</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <div class="bg-black h-[200px] flex justify-center items-center">
-      <h1 class="text-white text-[50px] font-bold">Truddies To-Do App</h1>
+    <div id="header" class="h-[200px]">
+      <div class="h-full w-full flex justify-center items-center bg-black/70">
+        <h1 class="text-white text-[50px] font-bold">Truddies To-Do App</h1>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center my-24 gap-x-9">
+      <input
+        type="text"
+        placeholder="Type A Task"
+        class="border-1 px-4 py-3 w-2/5 rounded-sm bg-green-50"
+        id="taskInput"
+      />
+      <button
+        class="bg-green-800 py-3 px-6 rounded-sm text-white"
+        id="taskButton"
+      >
+        Add Task
+      </button>
+    </div>
+
+    <div class="flex flex-col px-20 justify-center items-center gap-y-9">
+      <h2 class="text-3xl font-bold">All Tasks</h2>
+      <ul id="taskList" class="list-disc text-md"></ul>
     </div>
   </body>
 </html>

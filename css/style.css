@@ -1,0 +1,10 @@
+#header {
+  background-image: url(../imgs/bgI.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+li {
+  display: flex;
+  row-gap: 10px;
+}
